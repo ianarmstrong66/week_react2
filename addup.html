@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form onsubmit="addit(); return false;">
+		<input type="text" id="First" />
+		<input type="text" id="Second" />
+		<input type="Text" id="Third" />
+		<input type="submit" />
+	</form>
+
+	<script>
+		function addit() {
+			let FormX = document.forms[0];
+			let a = +FormX.elements[0].value;
+			let b = +FormX.elements[1].value;
+			FormX.elements[2].value = a+ b;
+		}
+	</script>
+
+</body>
+</html>
